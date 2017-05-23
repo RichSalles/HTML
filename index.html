@@ -1,0 +1,226 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Documento sem título</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" " href="css/plugins.css">
+
+
+</head>
+
+    <body>
+
+        
+
+        <nav class="menu-responsivo">
+                        <ul>
+                            <li><a href="index.html" class="buthome">Menu 1</a></li>
+                            <li><a href="#">Menu 2</a></li>
+                            <li><a href="#">Menu 3</a></li>
+                            <li><a href="#">Menu 4</a></li>
+                        </ul>
+        </nav>
+
+
+         <div id="popup" class="popup">
+                 <img src="imagens/chickens-01-580x580.jpeg">
+         </div>
+        <div class="layout">
+           
+        	<header>
+                
+                <div class="container">
+                    <div class="fundor">
+                        <img src="imagens/fundo1.jpg" alt="fundo r Tag">
+                    </div>
+
+                    <div class="logo">
+                    	<img src="imagens/logo.png" alt="Logo Topo Tag">
+                     </div>
+
+                     
+
+                 </div>
+
+
+                 <div class="menus">  
+                     
+                 </div>
+            </header>
+
+                <div class="links">
+
+                   <ul class="toggle"> 
+                        <li>
+                            <a  href="javascript:;"><i class="fa fa-bars"></i></a>
+                        </li>
+                    </ul>
+
+                    <nav class="teste">
+                            <ul>
+                                <li><a href="index.html" class="buthome">Menu 1</a></li>
+                                <li><a href="#">Menu 2</a></li>
+                                <li><a href="#">Menu 3</a></li>
+                                <li><a href="#">Menu 4</a></li>
+                            </ul>
+                     </nav>
+
+                    
+                </div>
+
+            <main> 
+
+                <div class="principal">
+                     <div class="container">
+                         
+                         <div class="image1">
+                             <a href="javascript:;"><img src="imagens/chickens-01-580x580.jpeg" alt="imagemG" class="img-thumbnail"></a>
+                         </div>
+
+                        <div class="image2">
+                             <img src="imagens/monster-pattern-bold-03-580x435.jpeg" alt="imagemR" class="img-thumbnail">
+                         </div>
+                        
+                        <div class="image3">
+                             <img src="imagens/pink-butt-580x662.jpeg" alt="imagemA" class="img-thumbnail">
+                         </div>
+                        
+                         <div class="imageL">
+
+
+
+                            <figure class="img-thumbnail">
+                                    <figcaption>
+
+                                         <h1>Faça seu login</h1>
+                                         <h2>É muito simples! O tempo médio de preenchimento é de apenas 6 minutos.</h2>
+                                         <h3>Qulaquer bla bla bla pra fazer volume</h3>
+
+                                        <div class="Form" id="formulario">
+                                            <form>
+                                                 <div class="form-group">
+                                                    <input type="text" class="form-control" id="InputLog" placeholder="Login" required>
+                                                   
+                                                 </div>
+
+                                                 <div class="form-group2">
+                                                    <input type="password" class="form-control" id="InputPassword" placeholder="Password" required>
+
+                                                 </div>
+                                            
+                                            
+
+                                            </form>
+                                        </div>
+                                         <button type="button" id="botao" class="bteste" onclick="return envia()">Sign Up</button>
+                                                                        
+                                        
+                                                
+
+                                    </figcaption>
+                              </figure>
+
+
+                             
+                         </div>
+                        
+                        
+                        
+
+                        <div class="image5">
+
+                                <figure class="img-thumbnail">
+                                    <figcaption>
+                                         <p>Vestibulum id nibh vitae lectus dignissim feugiat vel eget nulla. Sed mi purus, condimentum id viverra ac, ornare in elit. Sed laoreet, velit vitae ornare gravida, erat eros vulputate sem, in consectetur arcu quam eget nunc. Aliquam facilisis molestie.</p>
+                                    </figcaption>
+                                </figure>
+                         </div>
+
+
+                        <div class="image6">
+                             <img src="imagens/sailing-boat-580x580.jpeg" alt="imagemB" class="img-thumbnail">
+                        </div>
+                        
+
+                        
+
+
+                     </div>
+
+                     <div class="container2">
+                        <div class="image4">
+                                <figure class="img-thumbnail">
+                                    <img src="imagens/smartphone-02-580x580.jpeg" alt="imagemC" >
+                                        <figcaption>
+
+                                            <h1>Neque porro quisquam est qui dolorem ipsum </h1>
+                                            <h2>Data 2012</h2>
+                                             <p>Vestibulum id nibh vitae lectus dignissim feugiat vel eget nulla. Sed mi purus, condimentum id viverra ac, ornare in elit. Sed laoreet, velit vitae ornare gravida, erat eros vulputate sem, in consectetur arcu quam eget nunc. Aliquam facilisis molestie.</p>
+                                             <a href="#">Leia mais.</a>
+                                        </figcaption>
+                                 </figure>
+                            
+                             
+                         </div>
+                         
+
+                     </div>
+
+                </div>
+            </main>
+
+            <footer>
+                 <div class="tex">
+                    <p>Suspendisse arcu leo, ornare ac ultricies vel, convallis sed dolor. Curabitur sed ante sit amet tortor tempor feugiat.</p> 
+                    <p>Fusce sollicitudin mi sit amet risus tristique posuere eleifend id erat. Morbi in pretium eros. Pellentesque fermentum,</p>
+                     <p>odio vitae venenatis fermentum, augue leo commodo arcu, cursus egestas nisi augue quisss mauris.</p>
+                  </div> 
+                
+            </footer>
+        </div>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script >
+            $(function(){
+                
+                $('.toggle').click(function(){
+                    $('.layout').toggleClass('ativo');
+                    $('.menu-responsivo').toggleClass('ativo');
+                });
+
+                
+                
+                    
+            });
+
+            $(function(){
+                $('.image1').click(function(){
+                        //$('.popup').hide();
+                        $('.popup').toggleClass('ativo');
+                        $(document).toggleClass('ativo');
+                });
+            });
+
+            function envia() {
+                    var time_debut = document.getElementById("InputLog").value;
+                    var time_pass = document.getElementById("InputPassword").value
+                    
+                    if(time_debut == '') {
+                             $('.form-group').css({"border" : "1px solid #F00", "padding": "2px"});
+                    }
+
+                     if(time_pass == '') {
+                             $('.form-group2').css({"border" : "1px solid #F00", "padding": "2px"});
+                    }
+                    else {
+                            document.getElementById("formulario").submit();
+                    }   
+            }
+         
+            
+       </script>
+     
+
+    </body>
+</html>

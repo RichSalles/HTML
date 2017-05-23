@@ -1,0 +1,366 @@
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint
+@import ../bower_components/font-awesome/scss/font-awesome
+@import ../bower_components/sass-flex-mixin/flex
+
+@import mixins
+@import menu-responsivo
+
+
+body
+	font-size: 0px
+	//margin-left: 35px
+
+	.menu-responsivo
+		ul 
+			list-style: none
+
+
+header
+
+	
+   
+	+clearfix
+	min-height: 140px
+	background:
+		image: url('../imagens/fundo2.jpg')
+		position: top center
+		//repeat: no-repeat
+		//size: cover
+	border-bottom: 1px  solid #000000
+			
+
+	
+	.container
+		margin: 0 0
+		padding: 0 0
+		font-size: 0px
+	
+	&:after
+		.fundor
+			background-image: url('../imagens/fundo1.jpg')
+			background-repeat: repeat-x
+		//margin-top: 12px
+	
+
+	.logo
+		
+		
+
+		float: left
+		margin-top: 15px
+		margin-left: 25px
+
+		img
+			width: 310px
+			height: 70px
+		+breakpoint($tablet)
+			img
+				width: 260px
+				height: 63px
+
+
+
+	
+		
+body
+	.popup
+		position: fixed
+		top: 0
+		//bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+		width: 300px
+		height: 180px
+		padding: 15px
+		//background: #ffffff
+		display: none
+
+		&.ativo
+			display: block
+		&.desativo
+			display: none
+
+	.link
+
+		//border-top: 1px  solid #000000
+		//border-bottom: 1px  solid #000000
+			
+
+		.toggle,
+		.teste
+			display: inline-block
+
+
+
+	.toggle
+		padding-left: 20px
+		padding-top: 5px
+		font-size: 14pt
+		margin: 0 0 0 0 
+			
+		ul
+			font-size: 0px
+			padding: 0 10
+			margin: 0 0 0 0 
+			
+			
+
+		list-style: none
+		display: inline-block
+
+
+	.teste
+
+		display: inline-block
+
+		+breakpoint($tablet)
+			display: none
+		ul
+			font-size: 0px
+			padding: 0 0
+			margin: 0 0 0 0
+			
+
+			li
+				font-family: arial 
+				font-style: bold
+				font-weight: bold
+				font-size: 14pt
+				list-style: none
+				display: inline-block
+				margin: 0 0 0 0
+				border-top:  5px solid #FFFFFF
+				
+				padding-top: 15px
+				padding-bottom: 15px  
+				padding-right: 50px
+				padding-left: 50px
+
+					
+
+				&:hover
+					border-top: 5px solid #000000
+					
+					a	
+						text-transform: uppercase
+						text-decoration: none
+						color: #829c46
+
+				a	
+					text-transform: uppercase
+					text-decoration: none
+					color: #000000
+
+
+main 
+	
+	
+	border-top: 1px solid #000000
+	background:
+		image: url('../imagens/bg-body.gif')
+		repeat: repeat
+
+
+	.principal
+
+		+flexbox
+			
+		+justify-content(space-around)
+		flex-wrap: wrap
+		//margin: 0px 0
+
+		.container
+
+
+			margin: 0 0
+			+flexbox
+			+justify-content(space-around)
+			flex-wrap: wrap
+			content: none
+			
+			max-width: 1000px
+			
+			.imageL
+
+				margin: 25px 0
+				
+					
+				figure
+
+					width: 290px
+					height: 300px
+						
+					
+					figcaption
+						min-height: 280px
+						background-color: #ffffff
+						background-size: 100%
+
+						h1
+							margin: 0 0
+							padding-top: 10px
+							padding-left: 30px
+							padding-bottom: 0
+							font-size: 15pt
+				
+						h2
+							margin: 0 0
+							padding-left: 30px
+							padding-top: 10px
+							padding-bottom: 0
+							font-size: 10pt
+
+						h3
+							margin: 0 0
+							padding-left: 30px
+							padding-top: 10px
+							padding-bottom: 10px
+							font-size: 7pt
+						.Form
+							padding-left: 30px
+							width: 240px
+							height: 140px
+
+
+						
+
+						.bteste
+							padding: 5px 15px 5px 15px
+							background-color: #fcba45
+							margin-left: 80px
+							
+
+							&:hover
+								padding: 5px 15px 5px 15px
+								background-color: #f5d49a
+								margin-left: 80px
+							
+
+					
+
+
+		
+			.image5
+				margin: 25px 0
+
+				
+				figure
+
+					width: 290px
+					height: 300px
+					
+				
+					figcaption
+						min-height: 280px
+						background-color: #ea4848
+						background-size: 100%
+
+						p
+							padding-left: 15px
+							padding-top: 10px
+							padding-right: 15px
+							padding-bottom: 10px
+							font-size: 12pt
+							color: #ffffff
+						//background-color: #ea4848
+			//margin: 50px 0
+
+			//+make-sm-column(10)
+			//+make-sm-column-offset(1)
+
+			//.image1
+			//	img
+			//		width: 260px
+			//		height: 270px
+			//	.img-thumbnail
+			//		padding: 10px 10px 10px 10px
+			//		color: #b5b5b5
+			[class^="image"]
+				img
+					margin: 25px 0
+					width: 290px
+					height: 300px
+				.img-thumbnail
+					padding: 10px 10px 10px 10px
+			&:before 
+				content: none
+			&:after 
+				content: none
+
+		.container2
+			margin: 25px 0
+			float: left
+			.image4
+
+				figure
+					padding: 10px 10px 10px 10px
+					img
+						width: 270px
+						height: 290px
+					
+					
+				
+					figcaption
+						min-height: 320px
+						background-color: #FFFFFF
+						max-width: 270px
+						padding-left: 15px
+						//padding-top: 10px
+						padding-right: 15px
+						padding-bottom: 10px
+						
+					h1
+						padding-top: 10px
+						padding-bottom: 0
+						font-size: 15pt
+
+					h2
+						padding-top: 10px
+						font-size: 7pt
+						margin: 0 0
+					p
+						padding-top: 10px
+						padding-bottom: 0
+						font-size: 10pt
+
+					a 
+						padding-top: 10px
+						padding-bottom: 0
+						font-size: 10pt		
+						
+						//background-color: #ea4848
+
+				&:before 
+					content: none
+				&:after 
+					content: none
+			
+		
+
+
+
+
+
+
+
+footer
+	min-height: 200px
+	background:
+		image: url('../imagens/bg-footer.jpeg')
+
+	
+	.tex
+		padding: 60px
+		p
+			font-family: arial
+			font-style: italic
+			margin-left: 65px
+			text-align: left
+			color: #b5b5b5
+
+
+
+					
